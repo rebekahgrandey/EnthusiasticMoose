@@ -30,7 +30,14 @@ bool MooseAsks(string question)
 }
 
 bool isTrue = MooseAsks("Is Canada real?");
-Console.WriteLine(isTrue);
+if (isTrue)
+{
+    MooseSays("Really? It seems very unlikely.");
+}
+else
+{
+    MooseSays("I  K N E W  I T !!!");
+}
 
 void MooseSays(string message)
 {
