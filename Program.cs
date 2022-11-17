@@ -29,15 +29,67 @@ bool MooseAsks(string question)
     }
 }
 
-bool isTrue = MooseAsks("Is Canada real?");
-if (isTrue)
+// Ask a question
+CanadaQuestion();
+
+
+void CanadaQuestion()
 {
-    MooseSays("Really? It seems very unlikely.");
+    bool isTrue = MooseAsks("Is Canada real?");
+    if (isTrue)
+    {
+        MooseSays("Really? It seems very unlikely.");
+    }
+    else
+    {
+        MooseSays("I  K N E W  I T !!!");
+    }
 }
-else
+
+void EnthusiasticQuestion()
 {
-    MooseSays("I  K N E W  I T !!!");
+    bool isEnthusiastic = MooseAsks("Are you enthusiastic?");
+    if (isEnthusiastic)
+    {
+        MooseSays("Yay!");
+    }
+    else
+    {
+        MooseSays("You should try it!");
+    }
 }
+
+void LoveCSharpQuestion()
+{
+    bool doesLoveCSharp = MooseAsks("Do you love C# yet?");
+    if (doesLoveCSharp)
+    {
+        MooseSays("Wow, you're sOOoOooOO smart!!! Bahahahaha.");
+    }
+    else
+    {
+        MooseSays("It's okay.....I don't even know what C# is.");
+    }
+}
+
+void SecretQuestion()
+{
+    bool wantsSecret = MooseAsks("Do you want to know a secret?");
+    if (wantsSecret)
+    {
+        MooseSays("I'm not real! I've never touched grass.");
+    }
+    else
+    {
+        MooseSays("Fine, be that way then.");
+    }
+}
+
+// Ask some questions
+CanadaQuestion();
+EnthusiasticQuestion();
+LoveCSharpQuestion();
+SecretQuestion();
 
 void MooseSays(string message)
 {
